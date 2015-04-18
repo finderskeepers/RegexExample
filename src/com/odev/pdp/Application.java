@@ -14,7 +14,7 @@ public class Application {
 		String[] lines = new String[10];
 		int count = 0;
 		
-		while(input.hasNext()){					//if there is another line, stores it in the lines array
+		while(input.hasNext()){			//if there is another line, stores it in the lines array
 			lines[count] = input.nextLine();
 			count++;
 		}
@@ -29,14 +29,14 @@ public class Application {
 		
 		String pattern = "sayilar(([0-9]+\\s)+)([0-9]+#)";	//format is like : sayilar12 24 34#
 		
-		Pattern pt = Pattern.compile(pattern);				//compiles defined string(your regex) into a pattern
+		Pattern pt = Pattern.compile(pattern);			//compiles defined string(your regex) into a pattern
 		
-		Matcher match = pt.matcher(line);					//scans the line you give
+		Matcher match = pt.matcher(line);				//scans the line you give
 		
-		if(match.find())									//if finds any match, returns true
+		if(match.find())	//if finds any match, returns true
 			return true;
 		
-		else												//if not, returns false
+		else	//if not, returns false
 			return false;
 	}
 	
@@ -60,7 +60,7 @@ public class Application {
 				}
 			}
 			
-			else											//if line is not proper to your regex design :
+			else		//if line is not proper to your regex design :
 				System.out.println(lines[countForLines] + " is not proper!...");
 			
 			countForLines++;
@@ -78,13 +78,13 @@ public class Application {
 		for(int i = 0; i < array.length; i++){
 			if(array[i]!=null){
 			average += 1 / Double.parseDouble(array[i]); //double.parsedouble is a transforming method
-			count++;											//that transforms string to double
+			count++;								//that transforms string to double
 			}
 		}
 		
 		average = count / average;
 		
-		return (int)average;		//clearing the floating part
+		return (int)average;	//clearing the floating part
 	}
 	
 }
