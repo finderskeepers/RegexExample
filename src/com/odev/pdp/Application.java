@@ -65,7 +65,7 @@ public class Application {
 	}
 
 	public double harmonicalAverage(String[] array) { // makes harmonical average of founded
-		double average = 0;							  //numbers in the txt
+		double average = 0;					  //numbers in the txt
 		double count = 0; //count is for how many numbers you have
 
 		for (int i = 0; i < array.length; i++) {
