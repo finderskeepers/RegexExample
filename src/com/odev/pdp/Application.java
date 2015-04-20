@@ -50,12 +50,11 @@ public class Application {
 		while(lines[countForLines]!=null){					//if line is not null
 		
 			if(isProper(lines[countForLines])){				//if line is proper according to you regex design
-				Pattern pt = Pattern.compile("[0-9]{2,}+");			//finds the numbers
+				Pattern pt = Pattern.compile("[0-9]+");			//finds the numbers
 				Matcher match = pt.matcher(lines[countForLines]);	//scans the line
 			
-				while(match.find()){						//if finds any number
-					System.out.println(match.group());		//stores it in the numbers array
-					numbers[count] = match.group();
+				while(match.find()){						//if finds any number		
+					numbers[count] = match.group();			//stores it in the numbers array
 					count++;
 				}
 			}
