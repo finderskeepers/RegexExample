@@ -71,7 +71,7 @@ public class Application {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] != null) {
 				average += 1 / Double.parseDouble(array[i]); // double.parsedouble
-				count++; 			//is a transforming method that transforms string to double
+				count++; 		//is a transforming method that transforms string to double
 			}
 		}
 
